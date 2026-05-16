@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGuide — Rekomendasi & Spek Komputer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-gray-900">TechGuide</a>
+            <div class="space-x-6 text-sm font-medium text-gray-600">
+                <a href="#rekomendasi" class="hover:text-gray-900 transition">Rekomendasi</a>
+                <a href="#tanya" class="hover:text-gray-900 transition">Tanya Spek</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-4xl mx-auto text-center py-16 px-4">
+        <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
+            Cari Komputer & Peripherals Terbaik
+        </h1>
+        <p class="mt-4 text-lg text-gray-500">
+            Panduan spesifikasi, harga terbaru tahun ini, dan rekomendasi setup yang bersih serta maksimal.
+        </p>
+    </header>
+
+    <!-- Rekomendasi Section -->
+    <main id="rekomendasi" class="max-w-6xl mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Pilihan Terbaik Tahun Ini</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1: Keyboard -->
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">Keyboard</span>
+                <h3 class="text-lg font-bold text-gray-900 mt-2">Mechanical Keyboard 65% Layout</h3>
+                <p class="text-sm text-gray-500 mt-1">Sangat ringkas, estetis, dan cocok untuk kenyamanan mengetik maksimal.</p>
+                <div class="mt-4 pt-4 border-t border-gray-50 flex justify-between items-center">
+                    <span class="text-sm font-semibold text-gray-900">Rp800.000 - Rp1.200.000</span>
+                    <span class="text-xs bg-green-50 text-green-700 px-2 py-1 rounded-md font-medium">Sangat Direkomendasikan</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Mouse -->
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <span class="text-xs font-semibold text-purple-600 uppercase tracking-wider">Mouse</span>
+                <h3 class="text-lg font-bold text-gray-900 mt-2">Wireless Ultra-Lightweight Mouse</h3>
+                <p class="text-sm text-gray-500 mt-1">Mouse super ringan dengan sensor akurat untuk gaming maupun produktivitas sehari-hari.</p>
+                <div class="mt-4 pt-4 border-t border-gray-50 flex justify-between items-center">
+                    <span class="text-sm font-semibold text-gray-900">Rp500.000 - Rp900.000</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-md font-medium">Best Value</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Monitor -->
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <span class="text-xs font-semibold text-amber-600 uppercase tracking-wider">Monitor</span>
+                <h3 class="text-lg font-bold text-gray-900 mt-2">24" IPS FHD Monitor (100Hz+)</h3>
+                <p class="text-sm text-gray-500 mt-1">Layar jernih dengan refresh rate tinggi untuk visual yang mulus dan nyaman di mata.</p>
+                <div class="mt-4 pt-4 border-t border-gray-50 flex justify-between items-center">
+                    <span class="text-sm font-semibold text-gray-900">Rp1.200.000 - Rp1.500.000</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-md font-medium">Budget King</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Section Tanya Spek / Form -->
+    <section id="tanya" class="max-w-2xl mx-auto px-4 py-16 text-center">
+        <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+            <h2 class="text-xl font-bold text-gray-900 mb-2">Punya Budget Khusus?</h2>
+            <p class="text-sm text-gray-500 mb-6">Tuliskan budget dan kebutuhanmu, kami akan berikan rekomendasi racikan terbaik.</p>
+            
+            <form class="space-y-4 text-left">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-600 uppercase mb-1">Budget Kamu</label>
+                    <input type="text" placeholder="Contoh: 5 Juta atau 10 Juta" class="w-full px-4 py-2 border border-gray-200 rounded-xl focus:outline-none focus:border-gray-400 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-600 uppercase mb-1">Kebutuhan Utama</label>
+                    <select class="w-full px-4 py-2 border border-gray-200 rounded-xl focus:outline-none focus:border-gray-400 text-sm bg-white">
+                        <option>Gaming & Hiburan</option>
+                        <option>Coding / Sekolah</option>
+                        <option>Editing Video / Desain</option>
+                    </select>
+                </div>
+                <button type="button" class="w-full bg-gray-900 text-white text-sm font-medium py-3 rounded-xl hover:bg-gray-800 transition shadow-sm">
+                    Kirim Pertanyaan
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white py-8 text-center text-xs text-gray-400">
+        <p>&copy; 2026 TechGuide. Dibuat dengan rapi.</p>
+    </footer>
+
+</body>
+</html>
